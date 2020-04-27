@@ -9,10 +9,11 @@ import { MainMenuComponent } from './components/main-menu/main-menu.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { BioComponent } from './components/bio/bio.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { HomeComponent } from './components/home/home.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'bio', pathMatch: 'full' },
-  { path: 'bio', component: BioComponent }
+  { path: 'bio', component: HomeComponent }
 ];
 
 @NgModule({
@@ -21,12 +22,13 @@ const routes: Routes = [
     MainMenuComponent,
     ProfileComponent,
     BioComponent,
-    FooterComponent
+    FooterComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(routes, {scrollPositionRestoration: 'enabled'}),
+    RouterModule.forRoot(routes),
     BrowserAnimationsModule
   ],
   providers: [],
