@@ -1,6 +1,5 @@
 <nav class="nav main-nav">
-  <a class="nav-link active" href="#">Home</a>
-  <a class="nav-link" href="#">Projects</a>
-  <a class="nav-link" href="#">Link</a>
-  <a class="nav-link" href="#">Contact</a>
+  <a class="nav-link" [ngClass]="{ 'current-link': checkLink('/bio') }" routerLink="/bio">Bio</a>
+  <a class="nav-link" routerLink="/projects">Projects</a>
+  <a class="nav-link" routerLink="/contact">Contact</a>
 </nav>

@@ -10,7 +10,8 @@ import { ProfileComponent } from './components/profile/profile.component';
 import { BioComponent } from './components/bio/bio.component';
 
 const routes: Routes = [
-  { path: '', component: BioComponent }
+  { path: '', redirectTo: 'bio', pathMatch: 'full' },
+  { path: 'bio', component: BioComponent }
 ];
 
 @NgModule({
