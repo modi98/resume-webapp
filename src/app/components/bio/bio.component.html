@@ -1,8 +1,8 @@
 <div @profileTransitions>
-  <app-profile></app-profile>
+  <app-profile (sticky)="handleStickyEvent($event)"></app-profile>
 </div>
 
-<div class="bio-info">
+<div #bioInfoBox class="bio-info">
   <p class="bio-text" @bioInfoTransitions>
     Mauricio is a Software Developer specialized on using technologies like Angular, Vue, and 
     Node for creating modern and optimized web applications. Is mainly specialized on Front-End 

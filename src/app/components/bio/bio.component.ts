@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { trigger, state, style, animate, transition } from '@angular/animations';
 
 @Component({
@@ -24,9 +24,19 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
 })
 export class BioComponent implements OnInit {
 
+  @ViewChild('bioInfoBox') bioInfoBox: ElementRef;
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  handleStickyEvent(status): void {
+    if (status) {
+      this.bioInfoBox.nativeElement.classList.add('scrolled');
+    } else {
+      this.bioInfoBox.nativeElement.classList.remove('scrolled');
+    }
   }
 
 }
