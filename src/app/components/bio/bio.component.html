@@ -1,7 +1,9 @@
-<app-profile></app-profile>
+<div @profileTransitions>
+  <app-profile></app-profile>
+</div>
 
 <div class="bio-info">
-  <p>
+  <p class="bio-text" @bioInfoTransitions>
     Mauricio is a Software Developer specialized on using technologies like Angular, Vue, and 
     Node for creating modern and optimized web applications. Is mainly specialized on Front-End 
     development but has experience working with API services on Node and Java as well as 
@@ -16,6 +18,5 @@
     Currently, he is working on Accenture as an Application Development Analyst, specializing 
     on Front End Development with Angular and Node. In there he learned to work with bigger teams and projects 
     while collaborating with teammates from around the world.
-
   </p>
 </div>
