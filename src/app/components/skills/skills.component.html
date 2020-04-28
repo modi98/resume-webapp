@@ -6,26 +6,26 @@
 
     <div class="container">
       <div class="progress">
-        <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+        <div [@loadBar]="{ value: true, params: { duration: '.5s', delay: '0s', inWidth: '100%' }}" style="width: 100%" class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
       </div>
       <p>HTML - <b>Proficient</b></p>
 
       <div class="progress">
-        <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+        <div [@loadBar]="{ value: true, params: { duration: '.5s', delay: '0s', inWidth: '80%' }}" style="width: 80%" class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
       </div>
       <p>CSS - <b>Advanced</b></p>
 
       <div class="progress">
-        <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+        <div [@loadBar]="{ value: true, params: { duration: '.5s', delay: '0s', inWidth: '80%' }}" style="width: 80%" class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
       </div>
       <p>Javascript - <b>Advanced</b></p>
     </div>
   </div>
 
   <div class="frontend skill-box">
-    <h3 class="category-title">Javascript Frameworks</h3>
+    <h3 class="category-title" [@loadTransition]="{ value: true, params: { duration: '.2s', delay: '0.8s', yPosition: '0' }}">Javascript Frameworks</h3>
 
-    <div class="container skill">
+    <div class="container skill" [@loadTransition]="{ value: true, params: { duration: '.2s', delay: '1s', yPosition: '10px' }}">
       <div class="row justify-space-around">
         <div class="col-4 skill-icon">
           <i class="fab fa-angular fa-5x"></i>
@@ -37,7 +37,7 @@
       </div>
     </div>
 
-    <div class="container skill">
+    <div class="container skill" [@loadTransition]="{ value: true, params: { duration: '.2s', delay: '1.2s', yPosition: '10px' }}">
       <div class="row justify-space-around">
         <p class="col-8 skill-text">
           <b>Vue:</b> Proficient experience developing responsive web applications. Worked for almost 2 years with several projects ranging from online stores to data visualization dashboards.
@@ -55,31 +55,31 @@
 
     <div class="container">
       <div class="progress">
-        <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+        <div [@loadBar]="{ value: true, params: { duration: '.5s', delay: '1.6s', inWidth: '80%' }}" class="progress-bar progress-bar-striped" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
       </div>
       <p>Node - <b>Advanced</b></p>
 
       <div class="progress">
-        <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+        <div [@loadBar]="{ value: true, params: { duration: '.5s', delay: '1.6s', inWidth: '50%' }}" class="progress-bar progress-bar-striped" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
       </div>
       <p>Java - <b>Intermediate</b></p>
 
       <div class="progress">
-        <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+        <div [@loadBar]="{ value: true, params: { duration: '.5s', delay: '1.6s', inWidth: '80%' }}" class="progress-bar progress-bar-striped" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
       </div>
       <p>Mongo - <b>Advanced</b></p>
 
       <div class="progress">
-        <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+        <div [@loadBar]="{ value: true, params: { duration: '.5s', delay: '1.6s', inWidth: '50%' }}" class="progress-bar progress-bar-striped" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
       </div>
       <p>SQL - <b>Intermediate</b></p>
     </div>
   </div>
 
   <div class="backend skill-box">
-    <h3 class="category-title">Backend Libraries</h3>
+    <h3 class="category-title" [@loadTransition]="{ value: true, params: { duration: '.2s', delay: '2.3s', yPosition: '10px' }}">Backend Libraries</h3>
 
-    <div class="container skill">
+    <div class="container skill" [@loadTransition]="{ value: true, params: { duration: '.2s', delay: '2.3s', yPosition: '10px' }}">
       <div class="row justify-space-around">
         <div class="col-4 skill-icon">
           <i class="fas fa-shipping-fast fa-4x"></i>
@@ -91,7 +91,7 @@
       </div>
     </div>
 
-    <div class="container skill">
+    <div class="container skill" [@loadTransition]="{ value: true, params: { duration: '.2s', delay: '2.3s', yPosition: '10px' }}">
       <div class="row justify-space-around">
         <p class="col-8 skill-text">
           <b>Mongoose:</b> Worked on modeling of NoSQL databases as well as creating aggregate functions for data analysis and predictions.
