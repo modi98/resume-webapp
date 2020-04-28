@@ -10,11 +10,13 @@ import { ProfileComponent } from './components/profile/profile.component';
 import { BioComponent } from './components/bio/bio.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ProjectsComponent } from './components/projects/projects.component';
+import { SkillsComponent } from './components/skills/skills.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'bio', pathMatch: 'full' },
   { path: 'bio', component: BioComponent },
-  { path: 'projects', component: ProjectsComponent }
+  { path: 'projects', component: ProjectsComponent },
+  { path: 'skills', component: SkillsComponent }
 ];
 
 @NgModule({
@@ -24,7 +26,8 @@ const routes: Routes = [
     ProfileComponent,
     BioComponent,
     FooterComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    SkillsComponent
   ],
   imports: [
     BrowserModule,
