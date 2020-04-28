@@ -1,0 +1,124 @@
+<h2 class="comp-title">Skills</h2>
+
+<div class="comp-content">
+  <div class="skill-box">
+    <h3 class="category-title">Front End</h3>
+
+    <div class="container">
+      <div class="progress">
+        <div [@loadBar]="{ value: true, params: { duration: '.5s', delay: '0s', inWidth: '100%' }}" style="width: 100%" class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+      <p>HTML - <b>Proficient</b></p>
+
+      <div class="progress">
+        <div [@loadBar]="{ value: true, params: { duration: '.5s', delay: '0s', inWidth: '80%' }}" style="width: 80%" class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+      <p>CSS - <b>Advanced</b></p>
+
+      <div class="progress">
+        <div [@loadBar]="{ value: true, params: { duration: '.5s', delay: '0s', inWidth: '80%' }}" style="width: 80%" class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+      <p>Javascript - <b>Advanced</b></p>
+    </div>
+  </div>
+
+  <div class="frontend skill-box">
+    <h3 class="category-title" [@loadTransition]="{ value: true, params: { duration: '.2s', delay: '0.8s', yPosition: '0' }}">Javascript Frameworks</h3>
+
+    <div class="container skill" [@loadTransition]="{ value: true, params: { duration: '.2s', delay: '1s', yPosition: '10px' }}">
+      <div class="row justify-space-around">
+        <div class="col-4 skill-icon">
+          <i class="fab fa-angular fa-5x"></i>
+        </div>
+
+        <p class="col-8 skill-text">
+          <b>Angular:</b> Advanced experience using RxJS, Angular Material, and maintaining big projects. Took a course were we reviewed most relevant topics about the framework like data binding, routing, observables, services, and more.
+        </p>
+      </div>
+    </div>
+
+    <div class="container skill" [@loadTransition]="{ value: true, params: { duration: '.2s', delay: '1.2s', yPosition: '10px' }}">
+      <div class="row justify-space-around">
+        <p class="col-8 skill-text">
+          <b>Vue:</b> Proficient experience developing responsive web applications. Worked for almost 2 years with several projects ranging from online stores to data visualization dashboards.
+        </p>
+
+        <div class="col-4 skill-icon">
+          <i class="fab fa-vuejs fa-5x"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="skill-box">
+    <h3 class="category-title">Back End</h3>
+
+    <div class="container">
+      <div class="progress">
+        <div [@loadBar]="{ value: true, params: { duration: '.5s', delay: '1.6s', inWidth: '80%' }}" class="progress-bar progress-bar-striped" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+      <p>Node - <b>Advanced</b></p>
+
+      <div class="progress">
+        <div [@loadBar]="{ value: true, params: { duration: '.5s', delay: '1.6s', inWidth: '50%' }}" class="progress-bar progress-bar-striped" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+      <p>Java - <b>Intermediate</b></p>
+
+      <div class="progress">
+        <div [@loadBar]="{ value: true, params: { duration: '.5s', delay: '1.6s', inWidth: '80%' }}" class="progress-bar progress-bar-striped" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+      <p>Mongo - <b>Advanced</b></p>
+
+      <div class="progress">
+        <div [@loadBar]="{ value: true, params: { duration: '.5s', delay: '1.6s', inWidth: '50%' }}" class="progress-bar progress-bar-striped" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+      <p>SQL - <b>Intermediate</b></p>
+    </div>
+  </div>
+
+  <div class="backend skill-box">
+    <h3 class="category-title" [@loadTransition]="{ value: true, params: { duration: '.2s', delay: '2.3s', yPosition: '10px' }}">Backend Libraries</h3>
+
+    <div class="container skill" [@loadTransition]="{ value: true, params: { duration: '.2s', delay: '2.3s', yPosition: '10px' }}">
+      <div class="row justify-space-around">
+        <div class="col-4 skill-icon">
+          <i class="fas fa-shipping-fast fa-4x"></i>
+        </div>
+
+        <p class="col-8 skill-text">
+          <b>Express:</b> Created scalable API services for HTTP request handling. Took a course on best practices while developing using Express and also worked for almost 2 years maintaining API services.
+        </p>
+      </div>
+    </div>
+
+    <div class="container skill" [@loadTransition]="{ value: true, params: { duration: '.2s', delay: '2.3s', yPosition: '10px' }}">
+      <div class="row justify-space-around">
+        <p class="col-8 skill-text">
+          <b>Mongoose:</b> Worked on modeling of NoSQL databases as well as creating aggregate functions for data analysis and predictions.
+        </p>
+
+        <div class="col-4 skill-icon">
+          <i class="fas fa-database fa-4x"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="skill-box">
+    <h3 class="category-title">Other Skills</h3>
+
+    <div class="container">
+      <div class="row">
+        <p class="col other-skill">Python</p>
+        <p class="col other-skill">C++</p>
+        <p class="col other-skill">C#</p>
+        <p class="col other-skill">Swift</p>
+        <p class="col other-skill">Android</p>
+        <p class="col other-skill">Agile</p>
+        <p class="col other-skill">Testing</p>
+        <p class="col other-skill">Adobe Premiere</p>
+        <p class="col other-skill">Adobe After Effects</p>
+      </div>
+    </div>
+  </div>
+</div>
