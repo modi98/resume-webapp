@@ -10,6 +10,7 @@ import { ProfileComponent } from './components/profile/profile.component';
 import { BioComponent } from './components/bio/bio.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './components/home/home.component';
+import { ProjectsComponent } from './components/projects/projects.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'bio', pathMatch: 'full' },
@@ -23,7 +24,8 @@ const routes: Routes = [
     ProfileComponent,
     BioComponent,
     FooterComponent,
-    HomeComponent
+    HomeComponent,
+    ProjectsComponent
   ],
   imports: [
     BrowserModule,
