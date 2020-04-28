@@ -12,4 +12,8 @@ export class ProjectsComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  openExternalLink(link: string): void {
+    window.open(link);
+  }
+
 }
