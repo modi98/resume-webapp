@@ -18,8 +18,8 @@ export class FooterComponent implements OnInit {
       case 'linkedin':
         url = 'https://www.linkedin.com/in/mauricio-alvarado-6089a3169/';
         break;
-      case 'facebook':
-        url = 'https://www.facebook.com/Mauryy98';
+      case 'github':
+        url = 'https://github.com/modi98';
         break;
       case 'instagram':
         url = 'https://www.instagram.com/modii_98/';
