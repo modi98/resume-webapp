@@ -13,10 +13,11 @@ import { ProjectsComponent } from './components/projects/projects.component';
 import { SkillsComponent } from './components/skills/skills.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'bio', pathMatch: 'full' },
-  { path: 'bio', component: BioComponent },
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: 'home', component: BioComponent },
   { path: 'projects', component: ProjectsComponent },
-  { path: 'skills', component: SkillsComponent }
+  { path: 'skills', component: SkillsComponent },
+  { path: '**', redirectTo: 'home', pathMatch: 'full' }
 ];
 
 @NgModule({
