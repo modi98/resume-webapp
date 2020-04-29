@@ -38,5 +38,4 @@ export class BioComponent implements OnInit {
       this.bioInfoBox.nativeElement.classList.remove('scrolled');
     }
   }
-
 }
