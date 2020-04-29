@@ -1,14 +1,23 @@
 .main-title {
   padding-top: 15px;
   text-align: center;
-  font-size: 25px;
   line-height: 1;
   z-index: 990;
 }
 
 .title-box {
   background-color: white;
-  height: 110px;
+  height: 130px;
+}
+
+@media only screen and (max-width: 600px) {
+  .main-title {
+    font-size: 25px;
+  }
+
+  .title-box {
+    height: 110px;
+  }
 }
 
 .secondary-title-box {
