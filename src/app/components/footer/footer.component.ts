@@ -16,7 +16,7 @@ export class FooterComponent implements OnInit {
     let url = '';
     switch (socialMedia) {
       case 'linkedin':
-        url = 'https://www.linkedin.com/in/mauricio-alvarado-6089a3169/';
+        url = 'https://www.linkedin.com/in/mauricio-alvarado-herrera-6089a3169/';
         break;
       case 'github':
         url = 'https://github.com/modi98';
